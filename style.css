@@ -46,3 +46,18 @@ body {
   background-color: var(--text-blue);
   color: var(--white);
 }
+
+.home-title {
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.home-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.home-img-container {
+  margin: 0 auto;
+  max-width: 600px;
+}
