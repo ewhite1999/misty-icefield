@@ -46,3 +46,11 @@ body {
   background-color: var(--text-blue);
   color: var(--white);
 }
+
+
+.departuree {
+    display:flex;
+}
+
+
+
