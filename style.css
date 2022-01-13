@@ -28,6 +28,8 @@ body {
   background-color: var(--accent-blue);
   padding: 1em;
   font-size: 1.5rem;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: initial;
 }
 .header-img {
   height: 50px;
@@ -47,6 +49,10 @@ body {
 .header-link:hover {
   background-color: var(--text-blue);
   color: var(--white);
+}
+
+.departuree {
+  display: flex;
 }
 
 .home-title {
@@ -85,6 +91,8 @@ body {
   background-color: var(--accent-blue);
   padding: 1em;
   font-size: 1.5rem;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: initial;
 }
 
 .footer-link {
