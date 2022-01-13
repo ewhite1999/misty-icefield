@@ -61,3 +61,13 @@ body {
   margin: 0 auto;
   max-width: 600px;
 }
+
+.test-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.test {
+  max-width: calc(100% / 3);
+  padding: 2em;
+}
