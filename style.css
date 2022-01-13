@@ -14,6 +14,8 @@
 body {
   margin: 0;
   font-family: "Fira Sans", sans-serif;
+  color: var(--text-blue);
+  background-color: var(--white);
 }
 .wrapper {
   max-width: 1200px;
@@ -65,9 +67,13 @@ body {
 .test-flex {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 3em;
 }
 
 .test {
-  max-width: calc(100% / 3);
-  padding: 2em;
+  width: calc(100% / 3);
+  margin: 2em;
+  padding: 1em;
+  background-color: var(--accent-blue);
+  border-radius: 15px;
 }
