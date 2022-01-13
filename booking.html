@@ -1,78 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Booking</title>
-  </head>
-  <body>
-    <section>
-      <h1>Looking to climb new heights in a <i>cool</i> way?</h1>
-      <h2>Book your adventure right here!</h2>
-    </section>
-    <section>
-      <form>
-        <label for="Fullname"> Full Name: </label>
-        <input type="text" id="fullname" name="fullname" required />
-        <br /><br />
-        <label for="email"> Email Address: </label>
-        <input type="email" id="email" required />
-        <br /><br />
-        <label for="phone"> Phone Number: </label>
-        <input type="phone" id="phone" required />
-        <br /><br />
-        <label for="text"> Departure Location: </label>
-        <input type="text" id="depart" placeholder="London, UK" required />
-        <br />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Inc font-awesome -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Misty Icefield - Booking</title>
+        <style type="text/css">
+            .form-style-5{
+                max-width: 500px;
+                padding: 10px 20px;
+                background: #f4f7f8;
+                margin: 10px auto;
+                padding: 20px;
+                background: #f4f7f8;
+                border-radius: 8px;
+                font-family: Georgia, "Times New Roman", Times, serif;
+            }
+            .form-style-5 fieldset{
+                border: none;
+            }
+            .form-style-5 legend {
+                font-size: 1.4em;
+                margin-bottom: 10px;
+            }
+            .form-style-5 label {
+                display: block;
+                margin-bottom: 8px;
+            }
+            .form-style-5 input[type="text"],
+            .form-style-5 input[type="date"],
+            .form-style-5 input[type="datetime"],
+            .form-style-5 input[type="email"],
+            .form-style-5 input[type="number"],
+            .form-style-5 input[type="search"],
+            .form-style-5 input[type="time"],
+            .form-style-5 input[type="url"],
+            .form-style-5 textarea,
+            .form-style-5 select {
+                font-family: Georgia, "Times New Roman", Times, serif;
+                background: rgba(255,255,255,.1);
+                border: none;
+                border-radius: 4px;
+                font-size: 15px;
+                margin: 0;
+                outline: 0;
+                padding: 10px;
+                width: 100%;
+                box-sizing: border-box; 
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box; 
+                background-color: #e8eeef;
+                color:#8a97a0;
+                -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+                box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+                margin-bottom: 30px;
+            }
+            .form-style-5 input[type="text"]:focus,
+            .form-style-5 input[type="date"]:focus,
+            .form-style-5 input[type="datetime"]:focus,
+            .form-style-5 input[type="email"]:focus,
+            .form-style-5 input[type="number"]:focus,
+            .form-style-5 input[type="search"]:focus,
+            .form-style-5 input[type="time"]:focus,
+            .form-style-5 input[type="url"]:focus,
+            .form-style-5 textarea:focus,
+            .form-style-5 select:focus{
+                background: #d2d9dd;
+            }
+            .form-style-5 select{
+                -webkit-appearance: menulist-button;
+                height:35px;
+            }
+            .form-style-5 .number {
+                background: #1abc9c;
+                color: #fff;
+                height: 30px;
+                width: 30px;
+                display: inline-block;
+                font-size: 0.8em;
+                margin-right: 4px;
+                line-height: 30px;
+                text-align: center;
+                text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+                border-radius: 15px 15px 15px 0px;
+            }
+            
+            .form-style-5 input[type="submit"],
+            .form-style-5 input[type="button"]
+            {
+                position: relative;
+                display: block;
+                padding: 19px 39px 18px 39px;
+                color: #FFF;
+                margin: 0 auto;
+                background: #1abc9c;
+                font-size: 18px;
+                text-align: center;
+                font-style: normal;
+                width: 100%;
+                border: 1px solid #16a085;
+                border-width: 1px 1px 3px;
+                margin-bottom: 10px;
+            }
+            .form-style-5 input[type="submit"]:hover,
+            .form-style-5 input[type="button"]:hover
+            {
+                background: #109177;
+            }
+            </style>
+            
+      </head>
+<body>
+    <div class="wrapper">
+        <header class="main-head">
+          <img
+            class="header-img"
+            src="./mountainLogo.png"
+            alt="drawn mountain range"
+          />
+          <nav class="nav">
+            <a class="header-link" href="./index.html">Home</a>
+            <a class="header-link" href="./info.html">Info</a>
+            <a class="header-link" href="./booking.html">Booking</a>
+          </nav>
+        </header>
+        <section>
+            <h1>Looking to climb new heights in a <i>cool</i> way? </h1>
+            <h2>Book your adventure right here!</h2>
+        </section>
+        <section>
+            <form class="form-style-5"> 
+                <label for="Fullname"> Full Name: </label>
+                <input type="text" id="fullname" name="fullname" required>
+                <br><br>
+                <label for="email"> Email Address: </label>
+                <input type="email" id="email" required>
+                <br><br>
+                <label for="phone"> Phone Number: </label>
+                <input type="text" id="phone" required>
+                <br><br>
+                <label for="text"> Departure Location: </label>
+                <input type="text" id="depart" placeholder="London, UK" required>
+                <br>
 
-        <p>Journey:</p>
-
-        <input type="radio" name="journey" value="single" id="option1" />
-        <label for="option1">Single</label>
-        <input type="radio" name="journey" value="return" id="option2" />
-        <label for="option2">Return</label>
-
-        <br /><br />
-        <div id="flight">
-          <label>
-            Arrival <br />
-            <input type="date" name="arrival" value="Today" />
-          </label>
-          <br /><br />
-          <label>
-            Departure <br />
-            <input
-              type="date"
-              name="departure"
-              data-value="7"
-              value="After one week"
-            />
-          </label>
-        </div>
-        <br />
-        <label for="payment"> Payment Method: </label>
-        <select name="payment" id="payment">
-          <option value="p1">Card</option>
-          <option value="p2">Bank Transfer</option>
-          <option value="p3">Cash</option>
-        </select>
-
-        <br /><br />
-
-        <label for="other"> Specific Requirements:</label>
-        <br />
-        <textarea
-          name="other"
-          id="other"
-          cols="40"
-          rows="10"
-          placeholder="Type any specific requirements here"
-        ></textarea>
-
-        <br />
-        <input type="submit" value="Submit" />
-      </form>
-    </section>
-  </body>
+            
+                <p> Journey: </p>
+                <div class="departuree">
+                    <input type="radio" name="journey" value="single" id="option1">
+                <label for="option1">Single</label>
+                <input type="radio" name="journey" value="return" id="option2">
+                <label for="option2">Return</label>
+                </div>
+                
+            
+                <br><br>
+                <div id="flight">
+                    <label>
+                    Arrival <br/>
+                    <input type="date" name="arrival" value="Today"/>
+                    </label>
+                <br><br>
+                    <label>
+                    Departure <br>
+                    <input type="date" name="departure" data-value="7" value="After one week"/>
+                    </label>
+                </div>
+                <br>
+                <label for="payment"> Payment Method: </label>
+                <select name="payment" id="payment">
+                    <option value="p1"> Card</option>
+                    <option value="p2"> Bank Transfer </option>
+                    <option value="p3"> Cash </option>
+                </select>
+            
+            
+                <br><br>
+            
+                <label for="other"> Specific Requirements:</label>
+                <br>
+                <textarea name="other" id="other" cols="40" rows="10" placeholder = "Type any specific requirements here"></textarea>
+            
+                <br>
+                <input type="submit" value="Submit">
+            
+            
+            </form>
+        </section>
+    </div>
+</body>
 </html>
