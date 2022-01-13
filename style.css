@@ -38,11 +38,11 @@ body {
   align-items: center;
 }
 .header-link {
-  color: var(--text-blue);
   text-decoration: none;
   padding: 1em 1.5em;
   margin-left: 0.5em;
   border-radius: 15px;
+  color: var(--text-blue);
 }
 .header-link:hover {
   background-color: var(--text-blue);
@@ -76,4 +76,32 @@ body {
   padding: 1em;
   background-color: var(--accent-blue);
   border-radius: 15px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--accent-blue);
+  padding: 1em;
+  font-size: 1.5rem;
+}
+
+.footer-link {
+  text-decoration: none;
+  padding: 1em 1.5em;
+  margin-left: 0.5em;
+  border-radius: 15px;
+  color: var(--text-blue);
+}
+.footer-link:hover {
+  background-color: var(--text-blue);
+  color: var(--white);
+}
+
+.copywrite {
+  padding-right: 1.5em;
+}
+main {
+  padding-bottom: 3em;
 }
