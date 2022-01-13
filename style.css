@@ -1,0 +1,6 @@
+/* Adding in the colours as variables */
+:root {
+  --white: #fafeff;
+  --text-blue: #3f7eb3;
+  --accent-blue: #cbf1fa;
+}
