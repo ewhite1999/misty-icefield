@@ -1,0 +1,22 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 0 10px;
+  position: relative;
+  top: 200px;
+  margin: 80px auto;
+  background-color: white;
+}
+
+.main {
+  padding: 0 30px;
+  background: url(https://th.bing.com/th/id/R.7198b28b3d287760b3a34e1636979cbc?rik=4jx%2b%2bZI%2fkhwMUQ&riu=http%3a%2f%2fwww.earnyourturns.com%2fwp-content%2fuploads%2f2014%2f06%2falex_P5270185.jpg&ehk=kVwmWAG2CCDgjtBMb4SoLmIeBQFDePV9KSeSmvVSn%2bU%3d&risl=&pid=ImgRaw&r=0)
+    center center;
+  background-size: cover;
+  height: 600px;
+}

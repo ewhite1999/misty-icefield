@@ -14,6 +14,8 @@
 body {
   margin: 0;
   font-family: "Fira Sans", sans-serif;
+  color: var(--text-blue);
+  background-color: var(--white);
 }
 .wrapper {
   max-width: 1200px;
@@ -36,11 +38,11 @@ body {
   align-items: center;
 }
 .header-link {
-  color: var(--text-blue);
   text-decoration: none;
   padding: 1em 1.5em;
   margin-left: 0.5em;
   border-radius: 15px;
+  color: var(--text-blue);
 }
 .header-link:hover {
   background-color: var(--text-blue);
@@ -54,3 +56,59 @@ body {
 
 
 
+.home-title {
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.home-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.home-img-container {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.test-flex {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3em;
+}
+
+.test {
+  width: calc(100% / 3);
+  margin: 2em;
+  padding: 1em;
+  background-color: var(--accent-blue);
+  border-radius: 15px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--accent-blue);
+  padding: 1em;
+  font-size: 1.5rem;
+}
+
+.footer-link {
+  text-decoration: none;
+  padding: 1em 1.5em;
+  margin-left: 0.5em;
+  border-radius: 15px;
+  color: var(--text-blue);
+}
+.footer-link:hover {
+  background-color: var(--text-blue);
+  color: var(--white);
+}
+
+.copywrite {
+  padding-right: 1.5em;
+}
+main {
+  padding-bottom: 3em;
+}
