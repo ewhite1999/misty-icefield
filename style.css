@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Adding in the colours as variables */
+:root {
+  --white: #fafeff;
+  --text-blue: #3f7eb3;
+  --accent-blue: #cbf1fa;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Fira Sans", sans-serif;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--accent-blue);
+  padding: 1em;
+  font-size: 1.5rem;
+}
+.header-img {
+  height: 50px;
+  width: auto;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.header-link {
+  color: var(--text-blue);
+  text-decoration: none;
+  padding: 1em 1.5em;
+  margin-left: 0.5em;
+  border-radius: 15px;
+}
+.header-link:hover {
+  background-color: var(--text-blue);
+  color: var(--white);
+}
